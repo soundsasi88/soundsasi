@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get-Together Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Get-Together Application</h1>
+        <form id="applicationForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" placeholder="Enter number of guests" min="1" required>
+
+            <label for="message">Message (Optional):</label>
+            <textarea id="message" name="message" placeholder="Any special requests?"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Background Objects -->
+    <img src="lion.png" alt="Lion" class="background-object lion">
+    <img src="school.png" alt="School" class="background-object school">
+
+    <script src="script.js"></script>
+</body>
+</html>
